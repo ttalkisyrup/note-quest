@@ -16,6 +16,9 @@ const config: Config = {
       fontFamily: {
         Pretendard: ['var(--font-Pretendard)'],
       },
+      height: {
+        header: '52px',
+      },
     },
   },
   plugins: [],
