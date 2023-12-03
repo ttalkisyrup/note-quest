@@ -8,6 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        eun: {
+          yellow: '#FEDB61',
+          pink: '#FFA1AD',
+          purple: '#C190FF',
+          blue: '#9FA9FF',
+          green: '#81E4BB',
+        },
+      },
+      boxShadow: {
+        card: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -17,7 +29,20 @@ const config: Config = {
         Pretendard: ['var(--font-Pretendard)'],
       },
       height: {
-        header: '52px',
+        header: '56px',
+      },
+      keyframes: {
+        vibration: {
+          from: {
+            transform: 'rotate(7deg)',
+          },
+          to: {
+            transform: 'rotate(-7deg)',
+          },
+        },
+      },
+      animation: {
+        vibration: 'vibration .1s infinite',
       },
     },
   },
