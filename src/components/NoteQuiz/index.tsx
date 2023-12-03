@@ -76,9 +76,12 @@ export default function NoteQuiz() {
           <Card
             variant="ghost"
             className={clsx(
-              'w-full shadow-card transition bg-white',
-              correct !== null && 'bg-green-200',
-              wrongAnswer !== null && 'bg-red-200',
+              'w-full shadow-card transition',
+              correct
+                ? 'bg-green-200'
+                : wrongAnswer
+                ? 'bg-red-200'
+                : 'bg-white',
             )}
           >
             <Flex direction={'column'} gap="4">
