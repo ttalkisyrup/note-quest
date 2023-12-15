@@ -1,19 +1,25 @@
-import Arrow from '@/assets/svg/arrow.svg'
 import Link from 'next/link'
+
+import Header from '@/components/Header'
+import Card from '@/components/Card'
 
 export default function RootPage() {
   return (
-    <main>
-      <div className="flex justify-center items-center w-full my-5">
-        <Link href={'/name-quiz'}>
-          <div className="flex flex-col w-[300px] bg-eun-yellow rounded-3xl p-6 box-content space-y-6 shadow-card cursor-pointer">
-            <div className="flex justify-end">
-              <Arrow width={24} height={24} />
-            </div>
-            <div className="font-bold text-xl">혼자 연습하기</div>
-          </div>
-        </Link>
-      </div>
-    </main>
+    <>
+      <Header />
+      <main>
+        <div className="flex flex-col gap-3 justify-center items-center w-full my-5">
+          <Link href={'/name-quiz'}>
+            <Card title="혼자 연습하기" />
+          </Link>
+          <Link href={'/name-quiz'}>
+            <Card title="혼자 연습하기" color="pink" />
+          </Link>
+          <Link href={'/name-quiz'}>
+            <Card title="대결하기" color="blue" />
+          </Link>
+        </div>
+      </main>
+    </>
   )
 }

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import clsx from 'clsx'
 import { Theme } from '@radix-ui/themes'
-import Header from '@/components/Header'
 
 import localFont from 'next/font/local'
 
@@ -28,16 +27,15 @@ export default function RootLayout({
       <body
         className={clsx(
           Pretendard.className,
-          'flex min-h-screen flex-col items-center justify-between',
+          'flex min-h-screen flex-col items-center justify-between bg-gray-50',
         )}
       >
         <Theme
           accentColor="amber"
           grayColor="sand"
           radius="large"
-          className="w-full"
+          className="w-full min-h-screen"
         >
-          <Header />
           {children}
         </Theme>
       </body>
