@@ -9,13 +9,13 @@ export default function RootPage() {
       <Header />
       <main>
         <div className="flex flex-col gap-3 justify-center items-center w-full my-5">
-          <Link href={'/name-quiz'}>
-            <Card title="혼자 연습하기" />
+          <Link href={'/name-quiz/treble'}>
+            <Card title="높은 음자리표 연습하기" />
           </Link>
-          <Link href={'/name-quiz'}>
-            <Card title="혼자 연습하기" color="pink" />
+          <Link href={'/name-quiz/bass'}>
+            <Card title="낮은 음자리표 연습하기" color="pink" />
           </Link>
-          <Link href={'/name-quiz'}>
+          <Link href={'/name-quiz/battle'}>
             <Card title="대결하기" color="blue" />
           </Link>
         </div>
